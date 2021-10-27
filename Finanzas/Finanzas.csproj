@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms Liquidez\CapitalTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Liquidez\CapitalTrabajo.Designer.cs">
+      <DependentUpon>CapitalTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Liquidez\IndiceSolvencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Liquidez\IndiceSolvencia.Designer.cs">
+      <DependentUpon>IndiceSolvencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +76,12 @@
     <Compile Include="Razones Financieras\Endeudamiento.cs" />
     <Compile Include="Razones Financieras\Liquidez.cs" />
     <Compile Include="Razones Financieras\Rentabilidad.cs" />
+    <EmbeddedResource Include="Forms Liquidez\CapitalTrabajo.resx">
+      <DependentUpon>CapitalTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Liquidez\IndiceSolvencia.resx">
+      <DependentUpon>IndiceSolvencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BalanceGeneral.resx">
       <DependentUpon>BalanceGeneral.cs</DependentUpon>
     </EmbeddedResource>

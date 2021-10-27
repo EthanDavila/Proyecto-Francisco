@@ -1,4 +1,5 @@
 ﻿using Finanzas.Forms;
+using Finanzas.Forms_Liquidez;
 using Finanzas.POCO;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,20 @@ namespace Finanzas
             BalanceGeneral Form = new BalanceGeneral();
             Form.MdiParent = this;
             Form.datosBalanceGeneral = datosBalanceGeneral;
+            Form.Show();
+        }
+
+        private void capitalDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CapitalTrabajo Form = new CapitalTrabajo();
+            Form.MdiParent = this;
+            Form.Show();
+        }
+
+        private void índiceDeSolvenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IndiceSolvencia Form = new IndiceSolvencia();
+            Form.MdiParent = this;
             Form.Show();
         }
     }

@@ -9,3 +9,16 @@ C:\Users\HP\Desktop\Finanzas\Finanzas\obj\Debug\Finanzas.csproj.CoreCompileInput
 C:\Users\HP\Desktop\Finanzas\Finanzas\obj\Debug\Finanzas.exe
 C:\Users\HP\Desktop\Finanzas\Finanzas\obj\Debug\Finanzas.pdb
 C:\Users\HP\Desktop\Finanzas\Finanzas\obj\Debug\Finanzas.Forms.BalanceGeneral.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\bin\Debug\Finanzas.exe.config
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\bin\Debug\Finanzas.exe
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\bin\Debug\Finanzas.pdb
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Liquidez.CapitalTrabajo.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms.BalanceGeneral.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Main.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Properties.Resources.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.exe
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.pdb
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Liquidez.IndiceSolvencia.resources
