@@ -37,5 +37,10 @@ namespace Finanzas.Razones_Financieras
         {
             return ComprasCredito / PromCuentasxPagar;
         }
+
+        public double TextBox(System.Windows.Forms.TextBox T)
+        {
+            return Double.Parse(T.Text);
+        }
     }
 }

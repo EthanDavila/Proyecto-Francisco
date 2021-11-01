@@ -25,7 +25,7 @@ namespace Finanzas.Razones_Financieras
 
         public double RendimientoInversion(double UDI, double ActivoTotal)
         {
-            return UDI / ActivoTotal;
+            return (UDI / ActivoTotal) * 100;
         }
 
         public double RendimientoCapitalComun(double UDI, double DividendosPreferentes, double CapitalContable, double CapitalPreferente)
@@ -41,6 +41,11 @@ namespace Finanzas.Razones_Financieras
         public double DividendoAccion(double DividendosPagados, double NoAccionesPagadasVigentes)
         {
             return DividendosPagados / NoAccionesPagadasVigentes;
+        }
+
+        public double TextBox(System.Windows.Forms.TextBox T)
+        {
+            return Double.Parse(T.Text);
         }
     }
 }

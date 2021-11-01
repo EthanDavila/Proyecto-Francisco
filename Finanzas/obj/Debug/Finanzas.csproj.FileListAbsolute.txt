@@ -22,3 +22,17 @@ C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.csproj.CoreCo
 C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.exe
 C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.pdb
 C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Liquidez.IndiceSolvencia.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Liquidez.PruebaAcida.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms.EstadoResultado.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Liquidez.RotacionInventario.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Liquidez.RotacionCartera.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Liquidez.RotacionCuentasxPagar.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Endeudamiento.RazonEndeudamiento.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Endeudamiento.RazonPasivoCapital.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Rentabilidad.MBU.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Rentabilidad.UAI.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Rentabilidad.RotacionActivoTotalLP.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Rentabilidad.ROA.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Rentabilidad.RendimientoCapitalComun.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Rentabilidad.UtilidadAccion.resources
+C:\Users\HP\Desktop\Proyecto-Francisco\Finanzas\obj\Debug\Finanzas.Forms_Rentabilidad.DividendoAccion.resources

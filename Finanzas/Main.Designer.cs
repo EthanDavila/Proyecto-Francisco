@@ -72,6 +72,8 @@ namespace Finanzas
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.estadosFinancierosToolStripMenuItem,
             this.calculosFinancierosToolStripMenuItem});
@@ -108,6 +110,7 @@ namespace Finanzas
             this.estadoDeResultadoToolStripMenuItem.Name = "estadoDeResultadoToolStripMenuItem";
             this.estadoDeResultadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.estadoDeResultadoToolStripMenuItem.Text = "Estado de Resultado";
+            this.estadoDeResultadoToolStripMenuItem.Click += new System.EventHandler(this.estadoDeResultadoToolStripMenuItem_Click);
             // 
             // calculosFinancierosToolStripMenuItem
             // 
@@ -168,6 +171,7 @@ namespace Finanzas
             this.pruebaÁcidaToolStripMenuItem.Name = "pruebaÁcidaToolStripMenuItem";
             this.pruebaÁcidaToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.pruebaÁcidaToolStripMenuItem.Text = "Prueba Ácida";
+            this.pruebaÁcidaToolStripMenuItem.Click += new System.EventHandler(this.pruebaÁcidaToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
@@ -179,6 +183,7 @@ namespace Finanzas
             this.rotaciónDeInventarioToolStripMenuItem.Name = "rotaciónDeInventarioToolStripMenuItem";
             this.rotaciónDeInventarioToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.rotaciónDeInventarioToolStripMenuItem.Text = "Rotación de Inventario";
+            this.rotaciónDeInventarioToolStripMenuItem.Click += new System.EventHandler(this.rotaciónDeInventarioToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
@@ -190,6 +195,7 @@ namespace Finanzas
             this.rotaciónDeCarteraToolStripMenuItem.Name = "rotaciónDeCarteraToolStripMenuItem";
             this.rotaciónDeCarteraToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.rotaciónDeCarteraToolStripMenuItem.Text = "Rotación de Cartera";
+            this.rotaciónDeCarteraToolStripMenuItem.Click += new System.EventHandler(this.rotaciónDeCarteraToolStripMenuItem_Click);
             // 
             // toolStripSeparator8
             // 
@@ -201,6 +207,7 @@ namespace Finanzas
             this.rotaciónDeCuentasPorPagarACPToolStripMenuItem.Name = "rotaciónDeCuentasPorPagarACPToolStripMenuItem";
             this.rotaciónDeCuentasPorPagarACPToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.rotaciónDeCuentasPorPagarACPToolStripMenuItem.Text = "Rotación de Cuentas por Pagar a C/P";
+            this.rotaciónDeCuentasPorPagarACPToolStripMenuItem.Click += new System.EventHandler(this.rotaciónDeCuentasPorPagarACPToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -222,6 +229,7 @@ namespace Finanzas
             this.razónDeEndeudamientoToolStripMenuItem.Name = "razónDeEndeudamientoToolStripMenuItem";
             this.razónDeEndeudamientoToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.razónDeEndeudamientoToolStripMenuItem.Text = "Razón de Endeudamiento";
+            this.razónDeEndeudamientoToolStripMenuItem.Click += new System.EventHandler(this.razónDeEndeudamientoToolStripMenuItem_Click);
             // 
             // toolStripSeparator9
             // 
@@ -233,6 +241,7 @@ namespace Finanzas
             this.razónPasivoCapitalToolStripMenuItem.Name = "razónPasivoCapitalToolStripMenuItem";
             this.razónPasivoCapitalToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.razónPasivoCapitalToolStripMenuItem.Text = "Razón Pasivo - Capital";
+            this.razónPasivoCapitalToolStripMenuItem.Click += new System.EventHandler(this.razónPasivoCapitalToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -264,6 +273,7 @@ namespace Finanzas
             this.margenBrutoDeUtilidadMBUToolStripMenuItem.Name = "margenBrutoDeUtilidadMBUToolStripMenuItem";
             this.margenBrutoDeUtilidadMBUToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.margenBrutoDeUtilidadMBUToolStripMenuItem.Text = "Margen Bruto de Utilidad (MBU)";
+            this.margenBrutoDeUtilidadMBUToolStripMenuItem.Click += new System.EventHandler(this.margenBrutoDeUtilidadMBUToolStripMenuItem_Click);
             // 
             // toolStripSeparator10
             // 
@@ -275,6 +285,7 @@ namespace Finanzas
             this.margenDeUtilidadesOperacionalesToolStripMenuItem.Name = "margenDeUtilidadesOperacionalesToolStripMenuItem";
             this.margenDeUtilidadesOperacionalesToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.margenDeUtilidadesOperacionalesToolStripMenuItem.Text = "Margen de Utilidades Operacionales";
+            this.margenDeUtilidadesOperacionalesToolStripMenuItem.Click += new System.EventHandler(this.margenDeUtilidadesOperacionalesToolStripMenuItem_Click);
             // 
             // toolStripSeparator11
             // 
@@ -286,6 +297,7 @@ namespace Finanzas
             this.rotaciónDeActivoTotalALPToolStripMenuItem.Name = "rotaciónDeActivoTotalALPToolStripMenuItem";
             this.rotaciónDeActivoTotalALPToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.rotaciónDeActivoTotalALPToolStripMenuItem.Text = "Rotación de Activo Total a L/P";
+            this.rotaciónDeActivoTotalALPToolStripMenuItem.Click += new System.EventHandler(this.rotaciónDeActivoTotalALPToolStripMenuItem_Click);
             // 
             // toolStripSeparator12
             // 
@@ -297,6 +309,7 @@ namespace Finanzas
             this.rendimientoDeInversiónToolStripMenuItem.Name = "rendimientoDeInversiónToolStripMenuItem";
             this.rendimientoDeInversiónToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.rendimientoDeInversiónToolStripMenuItem.Text = "Rendimiento de Inversión";
+            this.rendimientoDeInversiónToolStripMenuItem.Click += new System.EventHandler(this.rendimientoDeInversiónToolStripMenuItem_Click);
             // 
             // toolStripSeparator13
             // 
@@ -308,6 +321,7 @@ namespace Finanzas
             this.rendimientoDeCapitalComúnToolStripMenuItem.Name = "rendimientoDeCapitalComúnToolStripMenuItem";
             this.rendimientoDeCapitalComúnToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.rendimientoDeCapitalComúnToolStripMenuItem.Text = "Rendimiento de Capital Común";
+            this.rendimientoDeCapitalComúnToolStripMenuItem.Click += new System.EventHandler(this.rendimientoDeCapitalComúnToolStripMenuItem_Click);
             // 
             // toolStripSeparator14
             // 
@@ -319,6 +333,7 @@ namespace Finanzas
             this.utilidadPorAcciónToolStripMenuItem.Name = "utilidadPorAcciónToolStripMenuItem";
             this.utilidadPorAcciónToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.utilidadPorAcciónToolStripMenuItem.Text = "Utilidad por Acción";
+            this.utilidadPorAcciónToolStripMenuItem.Click += new System.EventHandler(this.utilidadPorAcciónToolStripMenuItem_Click);
             // 
             // toolStripSeparator15
             // 
@@ -330,11 +345,13 @@ namespace Finanzas
             this.dividendoPorAcciónToolStripMenuItem.Name = "dividendoPorAcciónToolStripMenuItem";
             this.dividendoPorAcciónToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.dividendoPorAcciónToolStripMenuItem.Text = "Dividendo por Acción";
+            this.dividendoPorAcciónToolStripMenuItem.Click += new System.EventHandler(this.dividendoPorAcciónToolStripMenuItem_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
