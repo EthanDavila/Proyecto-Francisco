@@ -155,6 +155,7 @@
       <DependentUpon>BalanceGeneral.cs</DependentUpon>
     </Compile>
     <Compile Include="Poco\DatosBalanceGeneral.cs" />
+    <Compile Include="Poco\DatosEstadoResultado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Razones Financieras\Endeudamiento.cs" />
