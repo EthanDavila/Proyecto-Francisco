@@ -73,7 +73,7 @@ namespace Finanzas.Forms_Liquidez
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 141);
+            this.label3.Location = new System.Drawing.Point(303, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 4;
@@ -91,17 +91,18 @@ namespace Finanzas.Forms_Liquidez
             // 
             // TxtResultado
             // 
-            this.TxtResultado.Location = new System.Drawing.Point(101, 138);
+            this.TxtResultado.Location = new System.Drawing.Point(370, 17);
+            this.TxtResultado.Multiline = true;
             this.TxtResultado.Name = "TxtResultado";
             this.TxtResultado.ReadOnly = true;
-            this.TxtResultado.Size = new System.Drawing.Size(177, 20);
+            this.TxtResultado.Size = new System.Drawing.Size(177, 125);
             this.TxtResultado.TabIndex = 7;
             // 
             // CapitalTrabajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 177);
+            this.ClientSize = new System.Drawing.Size(588, 160);
             this.Controls.Add(this.TxtResultado);
             this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.label3);

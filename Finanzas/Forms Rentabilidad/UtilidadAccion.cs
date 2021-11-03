@@ -21,7 +21,7 @@ namespace Finanzas.Forms_Rentabilidad
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RR.UtilidadAccion(RR.TextBox(TxtUtilidad), RR.TextBox(TxtNo)).ToString();
+            TxtResultado.Text = $"Cada acción ordinaria posee una rentabilidad del {RR.UtilidadAccion(RR.TextBox(TxtUtilidad), RR.TextBox(TxtNo)).ToString()}";
         }
     }
 }

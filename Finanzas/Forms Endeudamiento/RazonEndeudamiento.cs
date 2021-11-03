@@ -21,7 +21,7 @@ namespace Finanzas.Forms_Endeudamiento
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RE.RazonEndeudamiento(Double.Parse(TxtPasivoTotal.Text), Double.Parse(TxtActivoTotal.Text)).ToString();
+            TxtResultado.Text = $"La empresa tiene un nivel de endeudamiento {RE.RazonEndeudamiento(Double.Parse(TxtPasivoTotal.Text), Double.Parse(TxtActivoTotal.Text)).ToString()} % frente sus activos esto quiere decir que el endeudamiento o el apalancamiento no es muy elevado ";
         }
     }
 }

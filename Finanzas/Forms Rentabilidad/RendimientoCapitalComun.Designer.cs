@@ -108,10 +108,11 @@ namespace Finanzas.Forms_Rentabilidad
             // 
             // TxtResultado
             // 
-            this.TxtResultado.Location = new System.Drawing.Point(140, 210);
+            this.TxtResultado.Location = new System.Drawing.Point(425, 19);
+            this.TxtResultado.Multiline = true;
             this.TxtResultado.Name = "TxtResultado";
             this.TxtResultado.ReadOnly = true;
-            this.TxtResultado.Size = new System.Drawing.Size(177, 20);
+            this.TxtResultado.Size = new System.Drawing.Size(177, 174);
             this.TxtResultado.TabIndex = 53;
             // 
             // BtnCalcular
@@ -127,7 +128,7 @@ namespace Finanzas.Forms_Rentabilidad
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 213);
+            this.label5.Location = new System.Drawing.Point(347, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 51;
@@ -137,7 +138,7 @@ namespace Finanzas.Forms_Rentabilidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 242);
+            this.ClientSize = new System.Drawing.Size(626, 211);
             this.Controls.Add(this.TxtResultado);
             this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.label5);

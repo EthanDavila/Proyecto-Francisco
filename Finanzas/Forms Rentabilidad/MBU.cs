@@ -21,7 +21,7 @@ namespace Finanzas.Forms_Rentabilidad
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RR.MargenBrutoUtilidad(RR.TextBox(TxtVentas), RR.TextBox(TxtCostoVentas)).ToString();
+            TxtResultado.Text = $"La empresa cuenta con un margen del {RR.MargenBrutoUtilidad(RR.TextBox(TxtVentas), RR.TextBox(TxtCostoVentas)).ToString()} % después de cancelar sus existencia ";
         }
     }
 }

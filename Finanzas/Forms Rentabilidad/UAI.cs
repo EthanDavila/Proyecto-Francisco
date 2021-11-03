@@ -21,7 +21,7 @@ namespace Finanzas.Forms_Rentabilidad
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RR.MargenUtilidadesOperacionales(RR.TextBox(TxtUtilidadesOperacionales), RR.TextBox(TxtVentas)).ToString();
+            TxtResultado.Text = $"La utilidad operacional es de {RR.MargenUtilidadesOperacionales(RR.TextBox(TxtUtilidadesOperacionales), RR.TextBox(TxtVentas)).ToString()}";
         }
     }
 }

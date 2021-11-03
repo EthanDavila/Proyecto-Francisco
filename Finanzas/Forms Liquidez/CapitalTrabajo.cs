@@ -24,7 +24,7 @@ namespace Finanzas.Forms_Liquidez
         {
             double Activo = Double.Parse(TxtActivos.Text);
             double Pasivo = Double.Parse(TxtPasivos.Text);
-            TxtResultado.Text = RL.CapitalTrabajo(Activo, Pasivo).ToString();
+            TxtResultado.Text = "Si la empresa tuviera que pagar todos los deudos a corto plazo tuviera un excedente de " + RL.CapitalTrabajo(Activo, Pasivo).ToString();
         }
     }
 }

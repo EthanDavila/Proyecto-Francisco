@@ -21,7 +21,7 @@ namespace Finanzas.Forms_Liquidez
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RL.PruebaAcida(Double.Parse(TxtActivos.Text), Double.Parse(TxtInventario.Text), Double.Parse(TxtPasivos.Text)).ToString();
+            TxtResultado.Text = $"Por cada Córdoba que debe la empresa tiene {RL.PruebaAcida(Double.Parse(TxtActivos.Text), Double.Parse(TxtInventario.Text), Double.Parse(TxtPasivos.Text)).ToString()} para cubrirlo sin disponer del inventario ";
         }
     }
 }

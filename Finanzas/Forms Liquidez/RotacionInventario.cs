@@ -22,8 +22,7 @@ namespace Finanzas.Forms_Liquidez
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RL.RotacionInventario(RL.TextBox(TxtCostoMercanciaVendida), RL.TextBox(TxtPromedioInventario)).ToString();
-            TxtMeses.Text = (12 / RL.TextBox(TxtResultado)).ToString();
+            TxtResultado.Text = $"Los inventarios se vendieron cada {12 / RL.RotacionInventario(RL.TextBox(TxtCostoMercanciaVendida), RL.TextBox(TxtPromedioInventario))} meses por ende se concluye que del inventario duro ---- meses en la bodega antes de ser vendido.";
         }
     }
 }

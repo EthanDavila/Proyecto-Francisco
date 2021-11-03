@@ -21,7 +21,7 @@ namespace Finanzas.Forms_Rentabilidad
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RR.RendimientoCapitalComun(RR.TextBox(TxtUDI), RR.TextBox(TxtDividendosPreferentes), RR.TextBox(TxtCapitalPreferente), RR.TextBox(TxtCapitalContable)).ToString();
+            TxtResultado.Text = $"La utilidad obtenida por el capital es de {RR.RendimientoCapitalComun(RR.TextBox(TxtUDI), RR.TextBox(TxtDividendosPreferentes), RR.TextBox(TxtCapitalPreferente), RR.TextBox(TxtCapitalContable)).ToString()}";
         }
     }
 }

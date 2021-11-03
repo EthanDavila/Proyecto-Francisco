@@ -21,7 +21,7 @@ namespace Finanzas.Forms_Rentabilidad
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RR.DividendoAccion(RR.TextBox(TxtDividendosPagados), RR.TextBox(TxtNo)).ToString();
+            TxtResultado.Text = $"Cada acción brinda una utilidad de {RR.DividendoAccion(RR.TextBox(TxtDividendosPagados), RR.TextBox(TxtNo)).ToString()}";
         }
     }
 }

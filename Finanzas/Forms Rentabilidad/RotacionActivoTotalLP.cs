@@ -21,8 +21,7 @@ namespace Finanzas.Forms_Rentabilidad
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RR.RotacionActivoTotalLP(RR.TextBox(TxtVentas), RR.TextBox(TxtActivoTotal)).ToString();
-            TxtDias.Text = (360 / RR.TextBox(TxtResultado)).ToString();
+            TxtResultado.Text = $"Los activos dilatan {360 / RR.RotacionActivoTotalLP(RR.TextBox(TxtVentas), RR.TextBox(TxtActivoTotal))} días en generar beneficios";
         }
     }
 }

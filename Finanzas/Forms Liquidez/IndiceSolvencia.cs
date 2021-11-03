@@ -24,7 +24,7 @@ namespace Finanzas.Forms_Liquidez
         {
             double Activo = Double.Parse(TxtActivos.Text);
             double Pasivo = Double.Parse(TxtPasivos.Text);
-            TxtResultado.Text = RL.IndiceSolvencia(Activo, Pasivo).ToString();
+            TxtResultado.Text = $"La empresa cuenta con un índice de solvencia de {RL.IndiceSolvencia(Activo, Pasivo).ToString("N4")} por ende puede responder sus obligaciones sin afectar la solvencia";
         }
     }
 }

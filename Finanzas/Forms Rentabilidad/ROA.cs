@@ -21,7 +21,7 @@ namespace Finanzas.Forms_Rentabilidad
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RR.RendimientoInversion(RR.TextBox(TxtUDI), RR.TextBox(TxtTotalActivos)).ToString();
+            TxtResultado.Text = $"Los activos reflejan una rentabilidad del {RR.RendimientoInversion(RR.TextBox(TxtUDI), RR.TextBox(TxtTotalActivos)).ToString()}";
         }
     }
 }

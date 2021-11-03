@@ -22,8 +22,7 @@ namespace Finanzas.Forms_Liquidez
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = RL.RotacionCuentasxPagarCortoPlazo(RL.TextBox(TxtComprasCredito), RL.TextBox(TxtPromedio)).ToString();
-            TxtDias.Text = (360 / RL.TextBox(TxtResultado)).ToString();
+            TxtResultado.Text = $"La empresa tarda {(360 / RL.RotacionCuentasxPagarCortoPlazo(RL.TextBox(TxtComprasCredito), RL.TextBox(TxtPromedio))).ToString()} días en pagar sus obligaciones";
         }
     }
 }

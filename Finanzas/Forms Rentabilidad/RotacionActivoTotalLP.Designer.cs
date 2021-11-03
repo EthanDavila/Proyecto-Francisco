@@ -36,21 +36,20 @@ namespace Finanzas.Forms_Rentabilidad
             this.TxtVentas = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TxtDias = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TxtResultado
             // 
-            this.TxtResultado.Location = new System.Drawing.Point(119, 137);
+            this.TxtResultado.Location = new System.Drawing.Point(400, 19);
+            this.TxtResultado.Multiline = true;
             this.TxtResultado.Name = "TxtResultado";
             this.TxtResultado.ReadOnly = true;
-            this.TxtResultado.Size = new System.Drawing.Size(177, 20);
+            this.TxtResultado.Size = new System.Drawing.Size(177, 102);
             this.TxtResultado.TabIndex = 42;
             // 
             // BtnCalcular
             // 
-            this.BtnCalcular.Location = new System.Drawing.Point(103, 97);
+            this.BtnCalcular.Location = new System.Drawing.Point(161, 98);
             this.BtnCalcular.Name = "BtnCalcular";
             this.BtnCalcular.Size = new System.Drawing.Size(75, 23);
             this.BtnCalcular.TabIndex = 41;
@@ -61,7 +60,7 @@ namespace Finanzas.Forms_Rentabilidad
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 140);
+            this.label3.Location = new System.Drawing.Point(317, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 40;
@@ -99,30 +98,11 @@ namespace Finanzas.Forms_Rentabilidad
             this.label1.TabIndex = 36;
             this.label1.Text = "Ventas: ";
             // 
-            // TxtDias
-            // 
-            this.TxtDias.Location = new System.Drawing.Point(119, 169);
-            this.TxtDias.Name = "TxtDias";
-            this.TxtDias.ReadOnly = true;
-            this.TxtDias.Size = new System.Drawing.Size(177, 20);
-            this.TxtDias.TabIndex = 44;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Días: ";
-            // 
             // RotacionActivoTotalLP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 204);
-            this.Controls.Add(this.TxtDias);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(588, 133);
             this.Controls.Add(this.TxtResultado);
             this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.label3);
@@ -146,7 +126,5 @@ namespace Finanzas.Forms_Rentabilidad
         private System.Windows.Forms.TextBox TxtVentas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtDias;
-        private System.Windows.Forms.Label label4;
     }
 }
