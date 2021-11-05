@@ -2,6 +2,7 @@
 using Finanzas.Forms_Endeudamiento;
 using Finanzas.Forms_Liquidez;
 using Finanzas.Forms_Rentabilidad;
+using Finanzas.Poco;
 using Finanzas.POCO;
 using System;
 using System.Collections.Generic;
@@ -18,9 +19,11 @@ namespace Finanzas
     public partial class Main : Form
     {
         public DatosBalanceGeneral datosBalanceGeneral;
+        public DatosEstadoResultado datosEstadoResultado;
         public Main()
         {
             InitializeComponent();
+            datosEstadoResultado = new DatosEstadoResultado();
             datosBalanceGeneral = new DatosBalanceGeneral();
         }
 
@@ -50,6 +53,7 @@ namespace Finanzas
         {
             EstadoResultado Form = new EstadoResultado();
             Form.MdiParent = this;
+            Form.Info = datosEstadoResultado;
             Form.Show();
         }
 

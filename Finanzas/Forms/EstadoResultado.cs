@@ -13,10 +13,10 @@ namespace Finanzas.Forms
 {
     public partial class EstadoResultado : Form
     {
-        DatosEstadoResultado Info;
+        public DatosEstadoResultado Info { get; set; }
         string[] Row = {"Ventas", "Costo de Ventas", "Margen Bruto", "Gastos Operativos", "Gastos de Ventas", "Renta de Almacen", "Sueldos de Agentes",
-        "Servicios Básicos", "Gastos de Administración", "Renta de Oficinas", "Sueldo del Personal de Oficinas", "Papelería y Útiles de Oficina",
-        "Utilidad de Operación", "Gastos Financieros", "Impuestos Pagados", "Utilidad de Impuestos", "IR", "Utilidad Neta", "Pago de Impuesto", "Utilidad Retenida"};
+        "Servicios Básicos", "Gastos de Administración", "Renta de Oficinas", "Sueldo del Personal de Oficinas", "Papelería y Útiles de Oficina", 
+        "Gastos Financieros", "Impuestos Pagados", "Utilidad de Operación", "IR", "Utilidad Neta", "Pago de Impuesto", "Utilidad Retenida"};
 
         public EstadoResultado()
         {
@@ -45,20 +45,18 @@ namespace Finanzas.Forms
                 double GastosVentas = RentaAlmacen + SueldosAgentes + ServiciosBasicos;
                 double GastosAdministracion = RentaOficinas + SueldoPersonalOficinas + PapeleriaUtilesOficinas;
                 double GastosFinancieros = InteresesPagados;
-                double GastosOperativos = GastosVentas + GastosAdministracion;
+                double GastosOperativos = GastosVentas + GastosAdministracion + GastosFinancieros;
                 double UtilidadOperacion = MargenBruto - GastosOperativos;
-                double UtilidadImpuestos = UtilidadOperacion - GastosFinancieros;
-                double Impuestos_IR = UtilidadImpuestos * 0.30;
-                double UtilidadNeta = UtilidadImpuestos - Impuestos_IR;
+                double Impuestos_IR = Math.Abs(UtilidadOperacion * 0.30);
+                double UtilidadNeta = UtilidadOperacion - Impuestos_IR;
                 double UtilidadesRetenidas = UtilidadNeta - PagosImpuestos;
 
                 Info = new DatosEstadoResultado()
-                {
+                { 
                     Ventas = Ventas,
                     CostoVentas = CostoVentas,
                     UtilidadNeta = UtilidadNeta,
                     IR = Impuestos_IR,
-                    UtilidadImpuestos = UtilidadImpuestos,
                     GastosFinancieros = GastosFinancieros,
                     UtilidadOperacion = UtilidadOperacion,
                     GastosOperativos = GastosOperativos,
@@ -148,7 +146,7 @@ namespace Finanzas.Forms
             {
                 DgvEstadoResultado.Rows[0].Cells[1].Value = Info.Ventas.ToString();
                 DgvEstadoResultado.Rows[1].Cells[1].Value = Info.CostoVentas.ToString();
-                DgvEstadoResultado.Rows[2].Cells[2].Value = Info.MargenBruto.ToString();
+                DgvEstadoResultado.Rows[2].Cells[3].Value = Info.MargenBruto.ToString();
                 DgvEstadoResultado.Rows[5].Cells[1].Value = Info.RentaAlmacen.ToString();
                 DgvEstadoResultado.Rows[6].Cells[1].Value = Info.SueldoAgentes.ToString();
                 DgvEstadoResultado.Rows[7].Cells[1].Value = Info.ServiciosBasicos.ToString();
@@ -157,14 +155,13 @@ namespace Finanzas.Forms
                 DgvEstadoResultado.Rows[10].Cells[1].Value = Info.SueldoPersonalOficinas.ToString();
                 DgvEstadoResultado.Rows[11].Cells[1].Value = Info.PapeleriaUtilesOficina.ToString();
                 DgvEstadoResultado.Rows[11].Cells[2].Value = Info.GastosAdministracion.ToString();
-                DgvEstadoResultado.Rows[12].Cells[3].Value = Info.UtilidadOperacion.ToString();
-                DgvEstadoResultado.Rows[14].Cells[1].Value = Info.InteresesPagados.ToString();
-                DgvEstadoResultado.Rows[14].Cells[2].Value = Info.GastosFinancieros.ToString();
-                DgvEstadoResultado.Rows[15].Cells[3].Value = Info.UtilidadImpuestos.ToString();
-                DgvEstadoResultado.Rows[16].Cells[1].Value = Info.IR.ToString();
-                DgvEstadoResultado.Rows[17].Cells[3].Value = Info.UtilidadNeta.ToString();
-                DgvEstadoResultado.Rows[18].Cells[1].Value = Info.PagoImpuesto.ToString();
-                DgvEstadoResultado.Rows[19].Cells[3].Value = Info.UtilidadRetenida.ToString();
+                DgvEstadoResultado.Rows[13].Cells[1].Value = Info.InteresesPagados.ToString();
+                DgvEstadoResultado.Rows[13].Cells[2].Value = Info.GastosFinancieros.ToString();
+                DgvEstadoResultado.Rows[14].Cells[3].Value = Info.UtilidadOperacion.ToString();
+                DgvEstadoResultado.Rows[15].Cells[1].Value = Info.IR.ToString();
+                DgvEstadoResultado.Rows[16].Cells[3].Value = Info.UtilidadNeta.ToString();
+                DgvEstadoResultado.Rows[17].Cells[1].Value = Info.PagoImpuesto.ToString();
+                DgvEstadoResultado.Rows[18].Cells[3].Value = Info.UtilidadRetenida.ToString();
             }
         }
     }
